@@ -1,12 +1,15 @@
 const express = require('express');
 const app = express();
 
-const mockData= [{name:'ajay'},{name:'anjali'}]
+const mockUserData= [
+    {name:'ajay'},
+    {name:'anjali'}
+]
 app.get('/users',function(req,res){
    res.json({
        success:true,
        message:'successfully got users. Nice!',
-       users: mokeUserData
+       users: mockUserData
    })
 })
 
