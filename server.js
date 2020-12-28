@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 const mockData= [{name:'ajay'},{name:'anjali'}]
-app.gey('/users',function(req,res){
+app.get('/users',function(req,res){
    res.json({
        success:true,
        message:'successfully got users. Nice!',
